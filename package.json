@@ -7,7 +7,8 @@
     "mongoose": "^8.12.1",
     "node-cron": "^3.0.3",
     "nodemon": "^3.1.9",
-    "puppeteer": "^24.4.0"
+    "puppeteer": "^24.4.0",
+    "vercel": "^42.2.0"
   },
   "name": "hhauto-backend",
   "version": "1.0.0",
