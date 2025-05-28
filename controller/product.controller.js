@@ -14,7 +14,8 @@ export const createProducts = async (req) => {
   const products = req.body;
   console.log(req.body);
   for (const product of products) {
-    if (!product.name || !product.price || !product.images)
+    console.log(product);
+    if (!product.name || !product.newPrice || !product.images)
       return console.log({
         success: false,
         message: "Please provide all details",

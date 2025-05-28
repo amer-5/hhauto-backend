@@ -6,17 +6,38 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    brand: {
+      type: String,
+    },
     oldPrice: {
       type: String,
     },
     newPrice: {
       type: String,
       required: true,
-      default: 0,
+      default: "0",
     },
     images: {
       type: [String],
       required: true,
+    },
+    godiste: {
+      type: String,
+    },
+    kilometraza: {
+      type: String,
+    },
+    transmisija: {
+      type: String,
+    },
+    brojVrata: {
+      type: String,
+    },
+    konjskeSnage: {
+      type: String,
+    },
+    pogon: {
+      type: String,
     },
   },
   {
