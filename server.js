@@ -14,6 +14,12 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/products", ProductRoutes);
+app.use("/", (req, res) => {
+  return res.json({
+    allProducts: "/api/products",
+    oneProduct: "/api/products/id",
+  });
+});
 
 app.listen(PORT, () => {
   connectDB();
