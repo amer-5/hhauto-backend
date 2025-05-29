@@ -39,9 +39,6 @@ const productSchema = new mongoose.Schema(
     pogon: {
       type: String,
     },
-  },
-  {
-    timestamps: true,
   }
 );
 
